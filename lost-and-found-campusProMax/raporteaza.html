@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost & Found</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/raporteaza.css">
+    <link rel="stylesheet" href="styles/raport-info.css">
+    <link rel="icon" type="image/png" href="images/cactus.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <p class="header__title">Lost & <span class="header__title-secondary">Found</span></p>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="index.html" class="header__nav-link">Acasă</a></li>
+                    <li class="header__nav-item"><a href="obiecte-pierdute.html" class="header__nav-link">Obiecte
+                            Pierdute</a></li>
+                    <li class="header__nav-item"><a href="raporteaza.html" class="header__nav-link">Raportează</a></li>
+                    <li class="header__nav-item"><a href="harta-campus.html" class="header__nav-link">Hartă Campus</a>
+                    </li>
+                    <li class="header__nav-item"><a href="contacte.html" class="header__nav-link">Contacte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="raport-section">
+            <h1>Îinregistrează un obiect</h1>
+
+            <form clsass="raport-form_content" action="#" method="post">
+                <div class="button_pierdut-gasit">
+
+                    <div class="raport-selector__pierdut">
+                        <input class="radio__checked-pierdut" type="radio" id="pierdut" name="tip_raport"
+                            value="pierdut" style="display: none;">
+                        <div class="label-image__lost">
+                            <div class="image__lost">
+                                <img src="images/lost.png" alt="Obiect pierdut">
+                            </div>
+                            <label class="form__label-pierdut" for="pierdut">Am pierdut un obiect</label>
+                        </div>
+
+                    </div>
+
+                    <div class="raport-selector__found">
+                        <input type="radio" id="found" name="tip_raport" value="gasit" style="display: none;">
+                        <div class="label-image__found">
+                            <div class="image__found">
+                                <img src="images/found.png" alt="Obiect găsit">
+                            </div>
+                            <label class="form__label-found" for="found">Am găsit un obiect</label>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="raport__form-content">
+
+                    <div class="raport__pas-detalii">
+
+                        <div class="titlu-pas">
+
+                            <div class="image-label">
+                                <image class="pas" src="images/pas2.png" alt="Pas 2 Img"></image>
+                            </div>
+
+                            <h2 class="raport__titlu">Pasul 2:Detalii despre obiect</h2>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nume-obiect">Numele obiectului</label>
+                            <div class="input-with-icon">
+                                <span class="input-icon">🔧</span>
+                                <input type="text" id="nume-obiect" name="nume_obiect" placeholder="ex: Telefon , Ceas ">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Categorie</label>
+                            <div class="categories-container">
+                                <button type="button" class="category-chip">🗝️ Chei</button>
+                                <button type="button" class="category-chip">🎧 Electronice</button>
+                                <button type="button" class="category-chip">📄 Documente</button>
+                                <button type="button" class="category-chip">👔 Haine</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="descriere">Descriere amănunțită</label>
+                            <textarea id="descriere" name="descriere" rows="4"
+                                placeholder="ex: Căsti fără fir, husă pentru ochelari."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Atașază o fotografie</label>
+                            <div class="upload-box">
+                                <div class="upload-icon-container">
+                                    <span class="camera-icon">📸</span>
+                                    <span class="plus-badge">+</span>
+                                </div>
+                                <input type="file" id="foto-obiect" name="foto_obiect" accept="image/*"
+                                    style="display: none;">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="raport__pas-locatie-timp">
+                        <div class="titlu-pas">
+
+                            <div class="image-label">
+                                <image class="pas" src="images/pas3.png" alt="Pas 3 Img"></image>
+                            </div>
+
+                            <h2 class="raport__titlu">Pasul 3:locatia si timpul</h2>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="detalii-locatie">Detalii suplimentare despre locație</label>
+                            <textarea id="detalii-locatie" name="detalii_locatie" rows="3"
+                                placeholder="ex: Rândul din spate, pe scaun"></textarea>
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group half-width">
+                                <label for="data-pierderii">Data pierderii</label>
+                                <div class="input-with-icon">
+                                    <span class="input-icon">🗓️</span>
+                                    <input type="date" id="data-pierderii" name="data_pierderii">
+                                </div>
+                            </div>
+
+
+                            <div class="form-group half-width">
+                                <label for="ora-aproximativa">Ora aproximativă</label>
+                                <div class="input-with-icon">
+                                    <span class="input-icon">🕒</span>
+                                    <input type="time" id="ora-aproximativa" name="ora_aproximativa">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="raport__pas-date-contact">
+
+                        <div class="titlu-pas">
+                            <div class="image-label">
+                                <image class="pas" src="images/pas4.png" alt="Pas 4 Img"></image>
+                            </div>
+
+                            <h2 class="raport__titlu">Pasul 4:Datele de comtact</h2>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nume-complet">Numele tău complet</label>
+                            <div class="input-with-icon">
+                                <span class="input-icon">👱</span>
+                                <input type="text" id="nume-complet" name="nume_complet" placeholder="Nume Prenume "
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email-institutional">
+                                Email  
+                            </label>
+                            <div class="input-with-icon">
+                                <span class="input-icon">✉️</span>
+                                <input type="email" id="email-institutional" name="email_institutional"
+                                    placeholder="student@usm.md" required>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="telefon">Telefon</label>
+                            <div class="input-with-icon">
+                                <span class="input-icon">📞</span>
+                                <input type="tel" id="telefon" name="telefon" placeholder="060 xxx xxx" required>
+                            </div>
+                        </div>
+
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="acord-date" name="acord_date" required>
+                            <label for="acord-date">Sunt de acord cu utilizarea datelor mele pentru a fi
+                                contactat.</label>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+        </div>
+        </div>
+
+        <div class="raport_trimite-button">
+
+            <button type="submit">Trimite raportul</button>
+
+        </div>
+        </form>
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Birsa Vadim - Proiectul Lost & Found.</p>
+        <p>TI - 231 fr.</p>
+    </footer>
+</body>
+
+</html>

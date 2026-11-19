@@ -1,0 +1,128 @@
+.contact-section {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+}
+
+.contact-main-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0 0 30px 0;
+}
+
+
+.contact-grid {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap; 
+}
+
+.contact-form-wrapper {
+    flex: 1.2; 
+    min-width: 280px;
+}
+
+.contact-info-wrapper {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0 0 20px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #cbd5e0;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: inherit;
+    color: #1a202c;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form textarea {
+    resize: vertical; 
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #38a169;
+    box-shadow: 0 0 0 3px rgba(56, 161, 105, 0.15);
+}
+
+.btn-trimite {
+    align-self: flex-start;
+    background-color: #38a169;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 32px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-trimite:hover {
+    background-color: #2f855a;
+}
+
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contact-details p {
+    margin: 0;
+    font-size: 15px;
+    color: #2d3748;
+    line-height: 1.5;
+}
+
+.contact-details strong {
+    color: #1a202c;
+}
+
+
+@media (max-width: 650px) {
+    .contact-card {
+        padding: 25px;
+    }
+
+    .contact-grid {
+        gap: 35px;
+    }
+
+    .btn-trimite {
+        width: 100%;
+    }
+}

@@ -1,0 +1,209 @@
+.raport-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 85px 20px 60px;
+    overflow: hidden;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: clamp(36px, 4vw, 54px);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    color: #1a202c;
+    margin: 0 0 24px;
+    text-align: center;
+}
+
+.button_pierdut-gasit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    box-sizing: border-box;
+}
+
+.label-image__lost {
+    background-color: #38a169;
+    display: flex;
+    width: 400px;
+    height: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 2px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.form__label-pierdut {
+    cursor: pointer;
+}
+
+.form__label-found {
+    cursor: pointer;
+}
+
+.label-image__lost:hover {
+    background-color: #2f855a;
+}
+
+.raport-selector__pierdut {
+    cursor: pointer;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.raport-selector__pierdut:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(56, 161, 105, 0.15);
+}
+
+.raport-selector__pierdut:has(input[type="radio"]:checked) {
+    border: 2px solid #38a169;
+    box-shadow: 0 4px 20px rgba(56, 161, 105, 0.15);
+}
+
+.image__lost {
+    width: 30px;
+    height: 30px;
+    margin-left: -20px;
+    margin-right: 20px;
+}
+
+.image__found {
+    width: 30px;
+    height: 30px;
+    margin-left: -20px;
+    margin-right: 20px;
+}
+
+.label-image__found {
+    background-color: #d69e2e;
+    display: flex;
+    width: 400px;
+    height: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 2px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.label-image__found:hover {
+    background-color: #b7791f;
+}
+
+.raport-selector__found {
+    cursor: pointer;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.raport-selector__found:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(56, 161, 105, 0.15);
+}
+
+.raport-selector__found:has(input[type="radio"]:checked) {
+    border: 2px solid #d69e2e;
+    box-shadow: 0 4px 20px rgba(214, 158, 46, 0.15);
+}
+
+.raport_trimite-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.raport_trimite-button button {
+    background-color: #38a169;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 24px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    width: 400px;
+}
+
+.raport_trimite-button button:hover {
+    background-color: #2f855a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(56, 161, 105, 0.2);
+}
+
+@media (max-width: 900px) {
+    .button_pierdut-gasit {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .label-image__lost,
+    .label-image__found {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .raport-selector__pierdut,
+    .raport-selector__found {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .raport-section {
+        padding: 50px 15px 40px;
+    }
+
+    .label-image__lost,
+    .label-image__found {
+        width: 100%;
+        padding: 15px 10px;
+        font-size: 16px;
+    }
+
+    .raport_trimite-button button {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .image__lost,
+    .image__found {
+        margin-left: 0;
+        margin-right: 10px;
+        width: 24px;
+        height: 24px;
+    }
+}
